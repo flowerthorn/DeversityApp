@@ -1,5 +1,6 @@
 package com.lhx.diversityapp.base;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -7,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.FrameLayout;
 
-import com.lhx.deversityapp.R;
+import com.lhx.diversityapp.R;
 import com.lhx.diversityapp.app.MyApplication;
 import com.lhx.diversityapp.manager.ActivityManager;
 import com.lhx.diversityapp.utils.L;
@@ -83,5 +84,9 @@ public class BaseActivity extends AppCompatActivity {
         L.life(TAG, "onDestroy");
         super.onDestroy();
         ActivityManager.getInstance().removeActivity(this);
+    }
+
+    public Activity getContext() {
+        return mContext;
     }
 }

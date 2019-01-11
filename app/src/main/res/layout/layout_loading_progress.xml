@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="156dp"
+    android:layout_height="100dp"
+    android:paddingTop="5dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="5dp"
+    android:background="@drawable/common_icon_load_background">
+
+    <FrameLayout
+        android:id="@+id/rotation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        >
+        <ImageView
+            android:id="@+id/surround"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_loading"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录中"
+        android:layout_below="@+id/rotation"
+        android:layout_marginTop="13dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

@@ -27,9 +27,14 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation project(':netlib')
     implementation project(':mylibrary')
-    implementation 'com.google.code.gson:gson:2.8.0'//GSON
+    implementation files('libs/open_sdk.jar')
+    implementation 'com.google.code.gson:gson:2.8.0'//gson
     implementation 'com.jakewharton:butterknife:8.8.1'//butterknife
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
     implementation 'com.squareup.okhttp3:okhttp:3.6.0'//okhttp
+    implementation 'cn.leancloud.android:avoscloud-sdk:v3.+'//leancloud
+    implementation 'cn.leancloud.android:avoscloud-statistics:v3.+'
+    implementation 'org.greenrobot:eventbus:3.1.1'//event bus
+
 
 }

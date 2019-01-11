@@ -2,7 +2,7 @@ package com.lhx.diversityapp.utils;
 
 import android.util.Log;
 
-import com.lhx.deversityapp.BuildConfig;
+import com.lhx.diversityapp.BuildConfig;
 import com.lhx.diversityapp.app.MyApplication;
 
 
