@@ -11,7 +11,7 @@ import com.tencent.tauth.IUiListener;
 import com.tencent.tauth.Tencent;
 import com.tencent.tauth.UiError;
 
-import interfaces.QQLoginResultListener;
+import com.lhx.diversityapp.interfaces.QQLoginResultListener;
 
 public class QQLogin {
 

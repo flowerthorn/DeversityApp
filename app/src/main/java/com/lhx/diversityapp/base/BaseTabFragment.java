@@ -1,5 +1,6 @@
 package com.lhx.diversityapp.base;
 
+import android.app.Activity;
 import android.content.Context;
 import android.os.Handler;
 import android.os.Message;
@@ -50,7 +51,7 @@ public class BaseTabFragment extends BaseFragment {
     };
 
 
-    public Context getContext() {
+    public Activity getContext() {
         return getActivity();
     }
 

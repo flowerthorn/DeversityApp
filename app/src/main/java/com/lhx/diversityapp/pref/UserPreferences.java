@@ -30,4 +30,12 @@ public class UserPreferences {
     public static boolean getLoginStatus() {
         return SpUtils.get("LoginStatus", false);
     }
+
+    public static void setObjectId(String objectId) {
+        SpUtils.put("objectId", objectId);
+    }
+
+    public static String getObjectId() {
+        return SpUtils.get("objectId", null);
+    }
 }

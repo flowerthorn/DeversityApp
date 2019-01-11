@@ -21,7 +21,7 @@ import org.json.JSONObject;
 
 import java.util.List;
 
-import interfaces.QQLoginResultListener;
+import com.lhx.diversityapp.interfaces.QQLoginResultListener;
 
 /**
  * Created by lihongxin on 2019/1/11
@@ -90,6 +90,7 @@ public class LoginPresenter implements LoginContract.Presenter {
             userItem.setAvatar(avatar);
             userItem.setId(UserPreferences.getQQOpenid());
             userItem.setNickName(name);
+            userItem.setGender(gender);
             UserInfoConfig.set(userItem);
 
             //leancloud 服务器 存储
@@ -111,6 +112,8 @@ public class LoginPresenter implements LoginContract.Presenter {
                             @Override
                             public void done(AVException e) {
                                 if (e == null) {
+                                    UserPreferences.setObjectId(user.getObjectId());
+
                                     loginSuccess(finalUserItem);
 
                                 } else {
@@ -129,6 +132,7 @@ public class LoginPresenter implements LoginContract.Presenter {
                             @Override
                             public void done(AVException e) {
                                 if (e == null) {
+                                    UserPreferences.setObjectId(qqUser.getObjectId());
                                     loginSuccess(finalUserItem);
 
                                 } else {
@@ -151,7 +155,5 @@ public class LoginPresenter implements LoginContract.Presenter {
         UserPreferences.setLoginStatus(true);
         EventBus.getDefault().post(new LoginSuccessEvent(userItem));
         mView.showLoginSuccess();
-
-
     }
 }

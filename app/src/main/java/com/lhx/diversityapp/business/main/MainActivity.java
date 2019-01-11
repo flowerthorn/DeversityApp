@@ -13,6 +13,7 @@ import com.lhx.diversityapp.business.home.HomeFragment;
 import com.lhx.diversityapp.business.news.NewsFragment;
 import com.lhx.diversityapp.business.task.TaskFragment;
 import com.lhx.diversityapp.business.user.UserFragment;
+import com.lhx.diversityapp.eventbus.ExitAppEvent;
 import com.lhx.diversityapp.eventbus.LoginSuccessEvent;
 import com.lhx.diversityapp.pref.UserPreferences;
 import com.lhx.diversityapp.utils.L;
@@ -150,10 +151,24 @@ public class MainActivity extends BaseActivity implements MainContract.View {
     public void onMessageEvent(LoginSuccessEvent event) {
         L.d("qqLogin", "qq登陆成功 onMessageEvent" + "用户名" + event.getUserInfo().getNickName());
         if (userFragment != null && userFragment.isAdded()) {
-
+            userFragment.loginSuccess(event.getUserInfo().getNickName(), event.getUserInfo().getAvatar(), event.getUserInfo().getGender());
         }
         if (taskFragment != null && taskFragment.isAdded()) {
+            taskFragment.showContainter();
         }
+    }
 
+
+    //退出
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onMessageEvent(ExitAppEvent event) {
+        L.d("qqLogin", "退出app onMessageEvent");
+        if (userFragment != null && userFragment.isAdded()) {
+            userFragment.hideContainter();
+        }
+        if (taskFragment != null && taskFragment.isAdded()) {
+            taskFragment.hideContainter();
+        }
+        rbHome.setChecked(true);
     }
 }

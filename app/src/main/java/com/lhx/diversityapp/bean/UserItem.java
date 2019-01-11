@@ -4,6 +4,15 @@ public class UserItem {
     private String id;
     private String nickName;
     private String avatar;
+    private String gender;
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
 
     public String getNickName() {
         return nickName;

@@ -1,4 +1,4 @@
-package interfaces;
+package com.lhx.diversityapp.interfaces;
 
 import com.tencent.connect.auth.QQToken;
 

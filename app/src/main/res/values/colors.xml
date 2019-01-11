@@ -7,4 +7,7 @@
     <color name="transparent">#00000000</color>
     <color name="main_tab_select_color">#DC2409</color>
     <color name="main_tab_normal_color">#6A728E</color>
+    <color name="white_layout_bg">#FFF7F7F7</color>
+    <color name="function_item_select">#F6F6F6</color>
+    <color name="main_theme_text_color">#FFF6C300</color>
 </resources>
