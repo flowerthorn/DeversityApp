@@ -1,4 +1,4 @@
-package com.lhx.deversityapp.base;
+package com.lhx.deversityapp.base.interfaces;
 
 /**
  * Created by lihongxin on 2019/1/10
