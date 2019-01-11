@@ -1,11 +1,11 @@
-package com.lhx.deversityapp.base;
+package com.lhx.diversityapp.base;
 
 import android.content.Context;
 import android.os.Handler;
 import android.os.Message;
 
-import com.lhx.deversityapp.app.MyApplication;
-import com.lhx.deversityapp.utils.L;
+import com.lhx.diversityapp.app.MyApplication;
+import com.lhx.diversityapp.utils.L;
 
 import java.util.Date;
 

@@ -1,4 +1,4 @@
-package com.lhx.deversityapp.manager;
+package com.lhx.diversityapp.manager;
 
 import android.app.Activity;
 import android.content.Context;

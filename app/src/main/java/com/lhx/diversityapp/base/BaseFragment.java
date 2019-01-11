@@ -1,4 +1,4 @@
-package com.lhx.deversityapp.base;
+package com.lhx.diversityapp.base;
 
 import android.support.v4.app.Fragment;
 

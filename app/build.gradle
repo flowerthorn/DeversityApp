@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.lhx.deversityapp"
+        applicationId "com.lhx.diversityapp"
         minSdkVersion 16
         targetSdkVersion 28
         versionCode 1
@@ -27,4 +27,9 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation project(':netlib')
     implementation project(':mylibrary')
+    implementation 'com.google.code.gson:gson:2.8.0'//GSON
+    implementation 'com.jakewharton:butterknife:8.8.1'//butterknife
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.squareup.okhttp3:okhttp:3.6.0'//okhttp
+
 }

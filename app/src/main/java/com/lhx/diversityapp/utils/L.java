@@ -1,10 +1,9 @@
-package com.lhx.deversityapp.utils;
+package com.lhx.diversityapp.utils;
 
 import android.util.Log;
 
 import com.lhx.deversityapp.BuildConfig;
-import com.lhx.deversityapp.app.MyApplication;
-
+import com.lhx.diversityapp.app.MyApplication;
 
 
 public class L {

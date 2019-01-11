@@ -1,4 +1,4 @@
-package com.lhx.deversityapp.base;
+package com.lhx.diversityapp.base;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -8,9 +8,9 @@ import android.view.View;
 import android.widget.FrameLayout;
 
 import com.lhx.deversityapp.R;
-import com.lhx.deversityapp.app.MyApplication;
-import com.lhx.deversityapp.manager.ActivityManager;
-import com.lhx.deversityapp.utils.L;
+import com.lhx.diversityapp.app.MyApplication;
+import com.lhx.diversityapp.manager.ActivityManager;
+import com.lhx.diversityapp.utils.L;
 import com.lib.mylibrary.utils.StatusBarUtils;
 
 
