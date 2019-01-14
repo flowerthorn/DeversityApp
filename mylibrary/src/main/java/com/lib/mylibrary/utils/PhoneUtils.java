@@ -338,5 +338,16 @@ public class PhoneUtils {
         return context.getPackageManager().getLaunchIntentForPackage(packageName) != null;
     }
 
+    /**
+     * 获取屏幕宽度
+     *
+     * @return
+     */
+    public static int getScreenWidth(Context context) {
+        WindowManager manager = (WindowManager) context
+                .getSystemService(Context.WINDOW_SERVICE);
+        Display display = manager.getDefaultDisplay();
+        return display.getWidth();
+    }
 
 }

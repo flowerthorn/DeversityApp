@@ -10,4 +10,8 @@
     <color name="white_layout_bg">#FFF7F7F7</color>
     <color name="function_item_select">#F6F6F6</color>
     <color name="main_theme_text_color">#FFF6C300</color>
+    <color name="news_head_tab_color_select">#ebb812</color>
+    <color name="news_head_tab_color_normal">#9c9c9c</color>
+    <color name="main_theme_color">#ebb812</color>
+    <color name="gray_line_divider">#E6E6E6</color>
 </resources>

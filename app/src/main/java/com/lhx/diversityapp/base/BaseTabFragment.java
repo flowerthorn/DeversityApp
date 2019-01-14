@@ -22,6 +22,7 @@ public class BaseTabFragment extends BaseFragment {
 
     private long mSelectedTime = 0;
 
+
     public void onFragmentSelected() {
         if (!isResumed()) return;
         long lastTime = mSelectedTime;
